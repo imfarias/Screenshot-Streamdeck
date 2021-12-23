@@ -1,0 +1,40 @@
+{
+  "Actions": [
+    {
+      "Icon": "images/actionIcon",
+      "Name": "Screenshot Clipboard",
+      "States": [
+        {
+          "Image": "images/actionDefaultImage",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "SupportedInMultiActions": false,
+      "Tooltip": "Track's a Summonner Spell timer and send in game chat.",
+      "UUID": "br.com.imfarias.lolspelltracker.SummonerSpellTrackAction"
+    }
+  ],
+  "Category": "Screenshot Clipboard",
+  "CategoryIcon": "images/category/categoryIcon",
+  "Disabled": false,
+  "Author": "Vinicius Farias",
+  "CodePathWin": "LoLSpellTracker.exe",
+  "CodePathMac": "LoLSpellTracker",
+  "PropertyInspectorPath": "property_inspector/property_inspector.html",
+  "Description": "Track's a Summonner Spell timer and send in game chat.",
+  "Name": "Screenshot Clipboard",
+  "Icon": "images/pluginIcon",
+  "URL": "https://www.elgato.com/gaming/stream-deck",
+  "Version": "1.0",
+  "SDKVersion": 2,
+  "Software": {
+    "MinimumVersion": "4.1"
+  },
+  "OS": [
+    {
+      "Platform": "windows",
+      "MinimumVersion": "10"
+    }
+  ]
+}

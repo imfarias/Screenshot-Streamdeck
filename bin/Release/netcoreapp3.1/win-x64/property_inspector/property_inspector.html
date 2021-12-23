@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>LoLSpellTracker Property Inspector</title>
+	<link rel="stylesheet" href="css/sdpi.css">
+	<link rel="stylesheet" href="css/property-inspector.css">
+</head>
+<body>
+	<div class="sdpi-wrapper">
+
+		<div class="sdpi-item" id="summoner">
+			<div class="sdpi-item-label">Invocador</div>
+			<select class="sdpi-item-value select" id="summoner" onchange="setSettings(event.target.value, 'Summoner')">
+				<option value="0">Summoner 1</option>
+				<option value="1">Summoner 2</option>
+				<option value="2">Summoner 3</option>
+				<option value="3">Summoner 4</option>
+				<option value="4">Summoner 5</option>
+			</select>
+		</div>
+
+	</div>
+	<script src="js/property-inspector.js"></script>
+</body>
+</html>
