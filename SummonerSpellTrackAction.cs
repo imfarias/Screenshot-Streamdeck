@@ -27,7 +27,6 @@ namespace LoLSpellTracker
 			thread.Join(); //Wait for the thread to end
 
 			await Manager.SetTitleAsync(args.context, "Clipboard");
-			string clipboardText = File.ReadAllText("C:\\Users\\vinic\\Documents\\Projetos\\exportar.txt");
 			byte[] bytesClipboard = System.Text.Encoding.UTF8.GetBytes(clipboard);
 			string base64Text = System.Convert.ToBase64String(bytesClipboard);
 
@@ -39,6 +38,11 @@ namespace LoLSpellTracker
 				FileName = "https://ray.so?background=true&color=candy&darkMode=true&padding=32&language=\"auto\"&code=" + encodedString,
 				UseShellExecute = true
 			});
+
+			thread = new Thread(() => Clipboard.SetText("https://ray.so?background=true&color=candy&darkMode=true&padding=32&language=\"auto\"&code=" + encodedString));
+			thread.SetApartmentState(ApartmentState.STA); //Set the thread to STA
+			thread.Start();
+			thread.Join(); //Wait for the thread to end
 		}
 
 	}
